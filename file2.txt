@@ -1,0 +1,13 @@
+1. create VPC , name it is as MARUTHI-VPC. IP range-10.50.0.0/16. Enable to DNS Hostnames on VPC.
+2. Create subnets as following and enable auto assing ip.
+   webservers-10.50.1.0/24 -us-east-1a
+   appservers-10.50.2.0/24 -us-east-1b
+   dbservers-10.50.3.0/24  -us-east-1c
+3. create internet gate wayatatche to vpC.
+4. use defualt routing table and add subnets to it.
+5. configure rout towards IGW so that VMS can send the traffic outside VPC.
+6. Deploy VMS, one is us-east-1a and other in us-east-1c and check communication.
+
+wisdomjobs.com
+
+ 

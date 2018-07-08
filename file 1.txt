@@ -1,0 +1,35 @@
+1. create VPC , name it is as MARUTHI-VPC. IP range-10.50.0.0/16. Enable to DNS Hostnames on VPC.
+2. Create subnets as following and enable auto assing ip.
+   webservers-10.50.1.0/24 -us-east-1a
+   appservers-10.50.2.0/24 -us-east-1b
+   dbservers-10.50.3.0/24  -us-east-1c
+3. create internet gate wayatatche to vpC.
+4. use defualt routing table and add subnets to it.
+5. configure rout towards IGW so that VMS can send the traffic outside VPC.
+6. Deploy VMS, one is us-east-1a and other in us-east-1c and check communication.
+
+wisdomjobs.com
+
+                         S3 (SIMPLE STORAGE SERVICES): 
+                         ----------------------------
+what is difference between s3 vs EBS ?
+S3: web interface (obejcet storage)
+    scalable
+    static website hosting
+cold storage/reduced redurancy storage
+
+EBS: file system interface (block storage)
+     not easly scalable
+     databases: postgreSQL, MSSQL,ORACLE
+applications that requrie lots of read/write operations
+
+note; storage is called buckets
+
+aws-->sources-->storage-->s3-->Amazon s3-->create bucket-->marutis3(bucket name)-->create bucket.
+after will see new bucket "marutis3"
+create a.html file like sample    <body bgcolor="yellow">
+                                    <h1> Telugu AWS</H1>
+
+                                      </BODY>        after save a.html file 
+open marutis3-->upload-->a.html file--> next-->next--> upload
+overview a.html --> make public-->opn new tab link under url --> welcome AWS.
